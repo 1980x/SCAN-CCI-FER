@@ -3,13 +3,11 @@ Aum Sri Sai Ram
 
 Implementation of LANDMARK GUIDANCE INDEPENDENT SPATIO-CHANNEL
 ATTENTION AND COMPLEMENTARY CONTEXT INFORMATION
-BASED FACIAL EXPRESSION RECOGNITION on  Affectnet dataset
+BASED FACIAL EXPRESSION RECOGNITION on  CKPLUS dataset using 10 fold cross validation
 https://arxiv.org/pdf/2007.10298v1.pdf
 Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
 Date: 20-07-2020
 Email: darshangera@sssihl.edu.in
-
-Purpose: Perform training and testing on CKPLUS using 10 fold cross validation
 '''
 # External Libraries
 import argparse
