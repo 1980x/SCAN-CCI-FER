@@ -1,6 +1,14 @@
 '''
 Aum Sri Sai Ram
-By DG on 30-06-20
+
+Implementation of LANDMARK GUIDANCE INDEPENDENT SPATIO-CHANNEL
+ATTENTION AND COMPLEMENTARY CONTEXT INFORMATION
+BASED FACIAL EXPRESSION RECOGNITION on  Affectnet dataset
+https://arxiv.org/pdf/2007.10298v1.pdf
+Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
+Date: 20-07-2020
+Email: darshangera@sssihl.edu.in
+
 Purpose: Perform training and testing on CKPLUS using 10 fold cross validation
 '''
 # External Libraries
