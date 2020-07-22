@@ -1,0 +1,2 @@
+Please download pretrained resnet-50 of 2048 feature size model from 
+https://github.com/ox-vgg/vgg_face2 and keep it here.
