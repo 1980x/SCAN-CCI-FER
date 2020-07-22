@@ -1,14 +1,13 @@
 '''
 Aum Sri Sai Ram
-Implementation of : 
-
+Implementation of LANDMARK GUIDANCE INDEPENDENT SPATIO-CHANNEL
+ATTENTION AND COMPLEMENTARY CONTEXT INFORMATION
+BASED FACIAL EXPRESSION RECOGNITION on  Affectnet dataset
+https://arxiv.org/pdf/2007.10298v1.pdf
 Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
-Date: 10-07-2020
+Date: 20-07-2020
 Email: darshangera@sssihl.edu.in
-'''
 
-
-'''
 Our Idea:
 Implementation of  i)local attention and global attention using Attention branch using
      non-overlapping regions of size 
