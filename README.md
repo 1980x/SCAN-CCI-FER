@@ -2,7 +2,7 @@
 
 https://arxiv.org/pdf/2007.10298v1.pdf
 
-<em>Our proposed FER framework:</em>
+<strong>Our proposed FER framework:<strong>
 ![Proposed framework](images/graphicalabstract03.png)
 ![SCAN](images/SCAN.png)
 
@@ -14,6 +14,7 @@ https://arxiv.org/pdf/2007.10298v1.pdf
 
 
 <em>Activation maps using GRADCAM for masked face images are shown below:<em>
+  
 ![Activation maps of images from masked dataset](images/masked_activation_maps.png)
 
 
