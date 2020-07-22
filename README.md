@@ -5,10 +5,10 @@ https://arxiv.org/pdf/2007.10298v1.pdf
 ![Proposed framework](images/graphicalabstract03.png)
 ![SCAN](images/SCAN.png)
 
-![Activation maps of images from FEDRO dataset](figure_grad_cam_06.png)
+![Activation maps of images from FEDRO dataset](images/figure_grad_cam_06.png)
 
-![Example Masked face images rom FERPLUS dataset](figure_masked_faces_07.png)
+![Example Masked face images rom FERPLUS dataset](images/figure_masked_faces_07.png)
 
-![Activation maps of images from masked dataset](masked_activation_maps.png)
+![Activation maps of images from masked dataset](images/masked_activation_maps.png)
 
 
