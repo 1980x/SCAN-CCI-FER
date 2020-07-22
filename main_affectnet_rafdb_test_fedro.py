@@ -1,6 +1,14 @@
 '''
 Aum Sri Sai Ram
-By DG on 07-06-20
+
+Implementation of Landmark Guidance Independent Spatio-channel Attention and
+Complementary Context Information based Facial Expression Recognition
+
+https://arxiv.org/pdf/2007.10298v1.pdf
+Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
+Date: 20-07-2020
+Email: darshangera@sssihl.edu.in
+
 Purpose: Perform training on Affectnet + Rafdb dataset  and testing on fedro
 
 For Images refer to https://github.com/mysee1989/PG-CNN
