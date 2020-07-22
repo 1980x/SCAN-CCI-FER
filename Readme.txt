@@ -8,4 +8,5 @@ Contents:
               (https://github.com/ox-vgg/vgg_face2)
               
 Usage:
+   set the path to args.root_path, args.train_list and args.valid_list.
    python train_dataset.py
