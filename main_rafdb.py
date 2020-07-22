@@ -1,11 +1,11 @@
 '''
 Aum Sri Sai Ram
-Implementation of               on  RAFDB dataset
-
+Implementation of Landmark Guidance Independent Spatio-channel Attention and
+Complementary Context Information based Facial Expression Recognition on RAFDB dataset
+https://arxiv.org/pdf/2007.10298v1.pdf
 Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
-Date: 10-07-2020
+Date: 20-07-2020
 Email: darshangera@sssihl.edu.in
-
 '''
 
 import argparse
