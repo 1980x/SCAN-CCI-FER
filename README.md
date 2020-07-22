@@ -2,4 +2,4 @@ Title: Landmark Guidance Independent Spatio-channel Attention and Complementary 
 
 https://arxiv.org/pdf/2007.10298v1.pdf
 
-[Proposed framework](images/graphicalabstract03.png)
+![Proposed framework](images/graphicalabstract03.png)
