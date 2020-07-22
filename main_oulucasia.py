@@ -1,7 +1,11 @@
 '''
 Aum Sri Sai Ram
-By DG on 30-06-20
-Purpose: Perform training and testing on  OuluCasia using 10-fold cross validation dataset 
+Implementation of Landmark Guidance Independent Spatio-channel Attention and
+Complementary Context Information based Facial Expression Recognition on OuluCASIA dataset for 10 fold crossvalidation
+https://arxiv.org/pdf/2007.10298v1.pdf
+Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
+Date: 20-07-2020
+Email: darshangera@sssihl.edu.in
 '''
 # External Libraries
 import argparse
