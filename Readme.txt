@@ -5,5 +5,7 @@ Contents:
     2. dataset folder has dataset class for each of datasets separately.
     3. utils has util.py for loading pretrained vggfacenet model.
     4. pretrainedmodels for storing pretrained weights from vggface2 model
-    (https://github.com/cydonia999/VGGFace2-pytorch#pretrained-models)
+              (https://github.com/ox-vgg/vgg_face2)
+              
 Usage:
+   python train_dataset.py
