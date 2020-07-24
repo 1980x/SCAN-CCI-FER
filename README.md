@@ -13,8 +13,8 @@ https://arxiv.org/pdf/2007.10298v1.pdf
 ![Example Masked face images rom FERPLUS dataset](images/figure_masked_faces_07.png)
 
 
-<em>Activation maps using GRADCAM for masked face images are shown below:<em>
+<em>Comparision of activation maps using GRADCAM between Baseline3, RAN and Our model for masked face imageson FERPlus are shown below:<em>
   
-![Activation maps of images from masked dataset](images/masked_activation_maps.png)
+![Activation maps of images from masked dataset](images/masked_activation_baseline_ran_ours.png)
 
 
