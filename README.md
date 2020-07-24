@@ -17,6 +17,7 @@ https://arxiv.org/pdf/2007.10298v1.pdf
   
 ![Activation maps of images from masked dataset](images/masked_activation_baseline_ran_ours.png)
 
+<strong>Note</strong>: Our trained model checkpoints will be made available after publication. 
 
 
 
