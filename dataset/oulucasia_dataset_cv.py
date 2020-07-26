@@ -1,7 +1,8 @@
 '''
 Aum Sri Sai Ram
 28-06-20
-Oulucasiadataset class for cross validation training
+Email: darshangera@sssihl.edu.in
+Implementation of Oulucasiadataset class for cross validation training
 '''
 
 
@@ -88,7 +89,7 @@ def default_reader(fileList, num_classes, fold, train = 'True'):
             
             if identity in lookup:
                expression = change_emotion_label_same_as_affectnet(expression)
-               if expression >= 0: #exclude neutral, include neutral >= 0
+               if expression >= 0:               #exclude neutral > 0, include neutral >= 0
                   imgList.append([imgPath.strip(), expression])
                   num_per_cls_dict[expression] = num_per_cls_dict[expression] + 1 
                #print(imgPath,identity_exp, identity, expression)
