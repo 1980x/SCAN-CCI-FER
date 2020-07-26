@@ -1,8 +1,12 @@
 '''
 Aum Sri Sai Ram
-28-06-20
+Implementation of CK+ dataset class for cross validation 
+Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
+Date: 10-07-2020
+Email: darshangera@sssihl.edu.in
 
-CK+ dataset class for cross validation
+
+
 labels are :
 #labels:   0=Neutral 1=anger, 2=contempt, 3=disgust, 4=fear, 5=happy, 6=sadness, 7=surprise
 
