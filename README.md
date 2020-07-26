@@ -19,6 +19,17 @@ https://arxiv.org/pdf/2007.10298v1.pdf
 
 Note: Our trained model checkpoints will be made available after publication. 
 
+
+Citation: 
+@article{gera2020landmark,
+  title={Landmark Guidance Independent Spatio-channel Attention and Complementary Context Information based Facial Expression Recognition},
+  author={Gera, Darshan and Balasubramanian, S},
+  journal={arXiv preprint arXiv:2007.10298},
+  year={2020}
+}
+
+
+
 Acknowledgments:
 We dedicate this work to Bhagawan Sri Sathya Sai Baba, Divine Founder Chancellor of Sri Sathya Sai Institute of Higher Learning, PrasanthiNilyam, A.P., India.
 
