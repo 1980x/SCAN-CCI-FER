@@ -73,7 +73,7 @@ parser.add_argument('--weight-decay', '--wd', default=1e-4, type=float,  metavar
 
 parser.add_argument('--print-freq', '-p', default=1000, type=int,metavar='N', help='print frequency (default: 10)')
 
-parser.add_argument('--resume', default='checkpoints/sfew_model_best.pth.tar', type=str, metavar='PATH',   help='path to latest checkpoint (default: none)')
+parser.add_argument('--resume', default='checkpoints/affectnet_rafdb_model_best.pth.tar', type=str, metavar='PATH',   help='path to latest checkpoint (default: none)')
 
 parser.add_argument('--pretrained', default='pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl', type=str, metavar='PATH', 
                     help='path to latest checkpoint (default: none)')
@@ -146,9 +146,6 @@ def main():
                   transform=train_transform)
 
 
-    #train_loader = DataLoader(train_dataset, args.batch_size, shuffle=True, num_workers=8)
-    #Instead use sampler 
-    #train_loader = torch.utils.data.DataLoader(train_dataset, args.batch_size, sampler=ImbalancedDatasetSampler(train_dataset), num_workers=8)
     cls_num_list = train_dataset.get_cls_num_list()
     print('Train split class wise is :', cls_num_list)
 
