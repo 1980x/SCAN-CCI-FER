@@ -1,0 +1,20 @@
+                               Aum Sri Sai Ram
+Cross evaluation for FER on JAFFE using GACNN
+
+
+Namespace(batch_size=64, batch_size_t=64, database='jaffe', end2end=True, epochs=100, evaluate=False, imagesize=224, landmarksfile='../data/Jaffe/jaffe_landmarks_scores.pkl', loss_type='CE', lr=0.0001, model_dir='checkpoints_jaffe', momentum=0.9, num_attentive_regions=25, num_classes=7, num_regions=4, pretrained='pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl', print_freq=1000, 
+resume='checkpoints_affectnet7/2_checkpoint.pth.tar', root_path='../data/Jaffe/jaffedbasealigned', start_epoch=0, valid_list='../data/Jaffe/jaffe_test.txt', weight_decay=0.0001, workers=8)
+
+img_dir:  ../data/Jaffe/jaffedbasealigned
+
+train rule:  None  and loss type:  CE
+
+Total included  70 {0: 10, 1: 10, 2: 10, 3: 10, 4: 10, 5: 10, 6: 10}
+length of Jaffe valid Database: 70
+=> loading checkpoint 'checkpoints_affectnet7/2_checkpoint.pth.tar'
+=> loaded checkpoint 'checkpoints_affectnet7/2_checkpoint.pth.tar' 
+
+
+Testing Epoch: [0][0/2] Time  (1.4048428535461426)      Data (0.6244137287139893)       loss  (2.6033496856689453)      Prec1  (48.4375)
+Testing Epoch: [0][1/2] Time  (0.7330403327941895)      Data (0.3165252208709717)       loss  (2.4506913253239224)      Prec1  (51.42857360839844)
+Cross evaluation on Jaffe test Acc: 51.42857360839844
