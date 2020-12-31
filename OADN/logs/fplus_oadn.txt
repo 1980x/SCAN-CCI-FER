@@ -1,9 +1,16 @@
 
-				 Aum Sri Sai Ram
-FER on FERPLUS using OADN 
+				 (cpytorch) darshan@dmacs-3gpunode:~/OADN_FER$                                                                                                                                                         [174/1879]
+(cpytorch) darshan@dmacs-3gpunode:~/OADN_FER$ python train_ferplus.py
+
+                                 Aum Sri Sai Ram
+FER on FERPLUS using OADN
 
 
-Namespace(arch='resnet50', batch_size=128, batch_size_t=128, database='FERPLUS', end2end=True, epochs=60, evaluate=False, imagesize=224, lr=0.001, mode='majority', model_dir='checkpoints_ferplus', momentum=0.9, num_attentive_regions=25, num_classes=8, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=100, resume='checkpoints_ferplus/19_checkpoint.pth.tar', root_path='../data/FERPLUS/Dataset/', start_epoch=0, test_landmarksfile='../data/FERPLUS/Dataset/FERPLUS_test_landmarks_scores.pkl', test_list='../data/FERPLUS/Dataset/Labels/FER2013Test/label.csv', train_landmarksfile='../data/FERPLUS/Dataset/FERPLUS_train_valid_landmarks_scores.pkl', train_list='../data/FERPLUS/Dataset/Labels/FER2013TrainValid/label.csv', valid_landmarksfile='../data/FERPLUS/Dataset/FERPLUS_valid_landmarks.pkl', valid_list='../data/FERPLUS/Dataset/Labels/FER2013Valid/label.csv', weight_decay=1e-05, workers=16)
+Namespace(arch='resnet50', batch_size=128, batch_size_t=128, database='FERPLUS', end2end=True, epochs=60, evaluate=False, imagesize=224, lr=0.001, mode='majority', model_dir='checkpoints_ferplus', momentum=0.
+9, num_attentive_regions=25, num_classes=8, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=100, resume='', root_path='../data/FERPLUS/Dataset/', start_epoch=0, test_landmarksfi
+le='../data/FERPLUS/Dataset/FERPLUS_test_landmarks_scores.pkl', test_list='../data/FERPLUS/Dataset/Labels/FER2013Test/label.csv', train_landmarksfile='../data/FERPLUS/Dataset/FERPLUS_train_valid_landmarks_sco
+res.pkl', train_list='../data/FERPLUS/Dataset/Labels/FER2013TrainValid/label.csv', valid_landmarksfile='../data/FERPLUS/Dataset/FERPLUS_valid_landmarks.pkl', valid_list='../data/FERPLUS/Dataset/Labels/FER2013
+Valid/label.csv', weight_decay=1e-05, workers=16)
 
 img_dir:  ../data/FERPLUS/Dataset/
 
@@ -15,10 +22,106 @@ Number of parameters:
 Base Model: 23508032, Attention Branch:526600, Region Branch:526600 and Total: 24561232
 
 Model loaded for layers 1-4 from vggface2 pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl
-=> loading checkpoint 'checkpoints_ferplus/19_checkpoint.pth.tar'
-=> loaded checkpoint 'checkpoints_ferplus/19_checkpoint.pth.tar' (epoch 19)
 
 Training starting:
+
+Training Epoch: [0][0/221]      att_loss  (2.052236557006836)   region_loss (7.868460655212402) overall_loss (6.705215930938721)        Prec1  (25.78125)
+Training Epoch: [0][100/221]    att_loss  (1.6947125574149708)  region_loss (4.554754285529109) overall_loss (3.9827460038779985)       Prec1  (65.77196502685547)
+Training Epoch: [0][200/221]    att_loss  (1.5003299120053724)  region_loss (3.767974935360809) overall_loss (3.314445986676572)        Prec1  (73.0216064453125)
+Testing [24/25] att_loss  (1.0784289264587752)  region_loss (2.685808977124643) overall_loss (2.3643330092790364)       Prec@1  (81.86165618896484)
+Epoch: 0   Test Acc: 81.86165618896484
+Training Epoch: [1][0/221]      att_loss  (0.9582644104957581)  region_loss (2.22200345993042)  overall_loss (1.9692556858062744)       Prec1  (84.375)
+Training Epoch: [1][100/221]    att_loss  (0.8766804178162376)  region_loss (2.344269315795143) overall_loss (2.050751550362842)        Prec1  (84.11973571777344)
+Training Epoch: [1][200/221]    att_loss  (0.7870669385687036)  region_loss (2.216776279667717) overall_loss (1.9308344274017941)       Prec1  (84.69760131835938)
+Testing [24/25] att_loss  (0.6801098613819576)  region_loss (2.27538356060506)  overall_loss (1.9563288599737214)       Prec@1  (81.86165618896484)
+Epoch: 1   Test Acc: 81.86165618896484
+Training Epoch: [2][0/221]      att_loss  (0.5178796052932739)  region_loss (1.5411341190338135)        overall_loss (1.3364832401275635)       Prec1  (88.28125)
+Training Epoch: [2][100/221]    att_loss  (0.5918287977133647)  region_loss (1.7470556544785452)        overall_loss (1.5160103056690482)       Prec1  (87.47679138183594)
+Training Epoch: [2][200/221]    att_loss  (0.58378538637612)    region_loss (1.7502875707635832)        overall_loss (1.5169871565121322)       Prec1  (87.18905639648438)
+Testing [24/25] att_loss  (0.6111158844312742)  region_loss (1.9848464856985308)        overall_loss (1.7101003834499764)       Prec@1  (84.63500213623047)
+Epoch: 2   Test Acc: 84.63500213623047
+Training Epoch: [3][0/221]      att_loss  (0.43208563327789307) region_loss (1.019944429397583) overall_loss (0.9023727178573608)       Prec1  (92.96875)
+Training Epoch: [3][100/221]    att_loss  (0.5327353642718626)  region_loss (1.5170583500720487)        overall_loss (1.3201937657771725)       Prec1  (88.70668029785156)
+Training Epoch: [3][200/221]    att_loss  (0.5233502361311841)  region_loss (1.5204423698619824)        overall_loss (1.321023960908254)        Prec1  (88.52611541748047)
+Testing [24/25] att_loss  (0.5867939558536869)  region_loss (2.021107685805355) overall_loss (1.7342449789561016)       Prec@1  (84.1568374633789)
+Epoch: 3   Test Acc: 84.1568374633789
+Training Epoch: [4][0/221]      att_loss  (0.49529874324798584) region_loss (1.3578695058822632)        overall_loss (1.185355305671692)        Prec1  (92.96875)
+Training Epoch: [4][100/221]    att_loss  (0.4901179674238262)  region_loss (1.3843379781977965)        overall_loss (1.205493998999643)        Prec1  (89.41058349609375)
+Training Epoch: [4][200/221]    att_loss  (0.482412551617741)   region_loss (1.3463955987152176)        overall_loss (1.1735990103797533)       Prec1  (89.68438720703125)
+ Testing [24/25]        att_loss  (0.5724354676182649)  region_loss (1.9761124323384944)        overall_loss (1.6953770869622613)       Prec@1  (85.08129119873047)
+Epoch: 4   Test Acc: 85.08129119873047
+Training Epoch: [5][0/221]      att_loss  (0.21954557299613953) region_loss (0.5835387110710144)        overall_loss (0.5107401013374329)       Prec1  (97.65625)
+Training Epoch: [5][100/221]    att_loss  (0.4554393607200963)  region_loss (1.179206130528214) overall_loss (1.0344527977527957)       Prec1  (91.30569458007812)
+Training Epoch: [5][200/221]    att_loss  (0.45895653903780886) region_loss (1.219133986762507) overall_loss (1.0670985161368527)       Prec1  (90.77269744873047)
+Testing [24/25] att_loss  (0.5876087660351718)  region_loss (2.0190049807737314)        overall_loss (1.7327257667638178)       Prec@1  (84.98565673828125)
+Epoch: 5   Test Acc: 84.98565673828125
+Training Epoch: [6][0/221]      att_loss  (0.38433757424354553) region_loss (0.8607531785964966)        overall_loss (0.7654700875282288)       Prec1  (92.96875)                                     [118/1879]
+Training Epoch: [6][100/221]    att_loss  (0.42970929730056534) region_loss (1.0778964881849762)        overall_loss (0.9482590685976614)       Prec1  (91.66150665283203)
+Training Epoch: [6][200/221]    att_loss  (0.42837887231390276) region_loss (1.0731540123621623)        overall_loss (0.9441990001284661)       Prec1  (91.74440002441406)
+Testing [24/25] att_loss  (0.580185800439277)   region_loss (1.853628332044123) overall_loss (1.598939844936484)        Prec@1  (86.73892974853516)
+Epoch: 6   Test Acc: 86.73892974853516
+Training Epoch: [7][0/221]      att_loss  (0.4376477897167206)  region_loss (1.069911241531372) overall_loss (0.9434585571289062)       Prec1  (90.625)
+Training Epoch: [7][100/221]    att_loss  (0.40589629025152413) region_loss (0.9647432075868739)        overall_loss (0.8529738314671091)       Prec1  (92.4659652709961)
+Training Epoch: [7][200/221]    att_loss  (0.4092105234143746)  region_loss (0.9572722306892053)        overall_loss (0.8476599020447897)       Prec1  (92.48289489746094)
+Testing [24/25] att_loss  (0.5374966644161554)  region_loss (1.7594332461300874)        overall_loss (1.5150459526373317)       Prec@1  (86.99394989013672)
+Epoch: 7   Test Acc: 86.99394989013672
+Training Epoch: [8][0/221]      att_loss  (0.34450453519821167) region_loss (0.7256574630737305)        overall_loss (0.6494268774986267)       Prec1  (94.53125)
+Training Epoch: [8][100/221]    att_loss  (0.38585292511057145) region_loss (0.8369547190642593)        overall_loss (0.7467343677388559)       Prec1  (93.4715347290039)
+Training Epoch: [8][200/221]    att_loss  (0.38913200943920745) region_loss (0.8519825050190314)        overall_loss (0.7594124130645201)       Prec1  (93.54010772705078)
+Testing [24/25] att_loss  (0.5421685242219682)  region_loss (1.8825882862508772)        overall_loss (1.6145043652415618)       Prec@1  (87.05770111083984)
+Epoch: 8   Test Acc: 87.05770111083984
+Training Epoch: [9][0/221]      att_loss  (0.37350356578826904) region_loss (0.898872971534729) overall_loss (0.793799102306366)        Prec1  (93.75)
+Training Epoch: [9][100/221]    att_loss  (0.36283208813407636) region_loss (0.6876826870559466)        overall_loss (0.6227125767433997)       Prec1  (95.00308990478516)
+Training Epoch: [9][200/221]    att_loss  (0.3637754495315884)  region_loss (0.7328573619548361)        overall_loss (0.6590409889743103)       Prec1  (94.58566284179688)
+Testing [24/25] att_loss  (0.5392541941902537)  region_loss (1.84562647202078)  overall_loss (1.584352040883649)        Prec@1  (87.24897003173828)
+Epoch: 9   Test Acc: 87.24897003173828
+Training Epoch: [10][0/221]     att_loss  (0.33462458848953247) region_loss (0.5541141033172607)        overall_loss (0.5102161765098572)       Prec1  (97.65625)
+Training Epoch: [10][100/221]   att_loss  (0.3496778638351082)  region_loss (0.636967796205294) overall_loss (0.5795098194981566)       Prec1  (95.15779876708984)
+Training Epoch: [10][200/221]   att_loss  (0.35327520099148824) region_loss (0.6772961874506367)        overall_loss (0.6124920002856657)       Prec1  (94.7994384765625)
+Testing [24/25] att_loss  (0.5607473487435233)  region_loss (2.101967138205891) overall_loss (1.7937232162073078)       Prec@1  (87.56774139404297)
+Epoch: 10   Test Acc: 87.56774139404297
+Training Epoch: [11][0/221]     att_loss  (0.2957113981246948)  region_loss (0.40360477566719055)       overall_loss (0.3820261061191559)       Prec1  (96.875)
+Training Epoch: [11][100/221]   att_loss  (0.3280832572738723)  region_loss (0.5847678034022303)        overall_loss (0.5334309044450817)       Prec1  (95.75340270996094)
+Training Epoch: [11][200/221]   att_loss  (0.3401562769466372)  region_loss (0.6175619635119367)        overall_loss (0.562080836562968)        Prec1  (95.52238464355469)
+Testing [24/25] att_loss  (0.5406594459023262)  region_loss (1.9982610306695725)        overall_loss (1.7067407424335157)       Prec@1  (87.5358657836914)
+Epoch: 11   Test Acc: 87.5358657836914
+Training Epoch: [12][0/221]     att_loss  (0.3009870946407318)  region_loss (0.42496222257614136)       overall_loss (0.40016719698905945)      Prec1  (97.65625)
+Training Epoch: [12][100/221]   att_loss  (0.3158290808153625)  region_loss (0.48736188612361947)       overall_loss (0.4530553350059113)       Prec1  (96.47277069091797)
+Training Epoch: [12][200/221]   att_loss  (0.32143576398714263) region_loss (0.5200666583592619)        overall_loss (0.48034048932998336)      Prec1  (96.21812438964844)
+Testing [24/25] att_loss  (0.6095471633233042)  region_loss (2.1850776471717746)        overall_loss (1.8699715704457336)       Prec@1  (86.86643981933594)
+Epoch: 12   Test Acc: 86.86643981933594
+Training Epoch: [13][0/221]     att_loss  (0.36771413683891296) region_loss (0.48070114850997925)       overall_loss (0.458103746175766)        Prec1  (96.09375)
+Training Epoch: [13][100/221]   att_loss  (0.30807607923403824) region_loss (0.45493407503213035)       overall_loss (0.4255624823641069)       Prec1  (96.85952758789062)
+Training Epoch: [13][200/221]   att_loss  (0.3104059759953722)  region_loss (0.4710273181472845)        overall_loss (0.43890305730833934)      Prec1  (96.73896026611328)
+Testing [24/25] att_loss  (0.5609177778889732)  region_loss (2.136202959828898) overall_loss (1.821145974491522)        Prec@1  (87.56774139404297)
+Epoch: 13   Test Acc: 87.56774139404297
+Training Epoch: [14][0/221]     att_loss  (0.24421432614326477) region_loss (0.1812557578086853)        overall_loss (0.19384747743606567)      Prec1  (99.21875)
+Training Epoch: [14][100/221]   att_loss  (0.2968070505574198)  region_loss (0.3844964814068067)        overall_loss (0.3669586026727563)       Prec1  (97.40872192382812)
+Training Epoch: [14][200/221]   att_loss  (0.30160123717725573) region_loss (0.42088609444561287)       overall_loss (0.3970291297234113)       Prec1  (97.17039489746094)
+Testing [24/25] att_loss  (0.5863877865000443)  region_loss (2.3097410506794778)        overall_loss (1.9650704414934956)       Prec@1  (86.99394989013672)
+Epoch: 14   Test Acc: 86.99394989013672
+Training Epoch: [15][0/221]     att_loss  (0.2764769494533539)  region_loss (0.23675957322120667)       overall_loss (0.24470305442810059)      Prec1  (99.21875)
+Training Epoch: [15][100/221]   att_loss  (0.2914599237760695)  region_loss (0.3741628980577582)        overall_loss (0.3576223087487834)       Prec1  (97.60210418701172)
+Training Epoch: [15][200/221]   att_loss  (0.2940072037687349)  region_loss (0.3862554321982967)        overall_loss (0.36780579269525426)      Prec1  (97.4074935913086)
+Testing [24/25] att_loss  (0.6400833231060604)  region_loss (2.8722045713448394)        overall_loss (2.425780343446984)        Prec@1  (86.57953643798828)
+Epoch: 15   Test Acc: 86.57953643798828
+Training Epoch: [16][0/221]     att_loss  (0.28583383560180664) region_loss (0.25977784395217896)       overall_loss (0.26498904824256897)      Prec1  (97.65625)
+Training Epoch: [16][100/221]   att_loss  (0.2712017738878137)  region_loss (0.31495451698503873)       overall_loss (0.3062039742080292)       Prec1  (97.89603424072266)
+Training Epoch: [16][200/221]   att_loss  (0.28426017601098585) region_loss (0.3669610572469175)        overall_loss (0.3504208877905091)       Prec1  (97.52409362792969)
+Testing [24/25] att_loss  (0.5873114379074759)  region_loss (2.341842293929324) overall_loss (1.9909361305227695)       Prec@1  (87.37648010253906)
+Epoch: 16   Test Acc: 87.37648010253906
+Training Epoch: [17][0/221]     att_loss  (0.21605317294597626) region_loss (0.386358380317688) overall_loss (0.3522973358631134)       Prec1  (96.875)
+Training Epoch: [17][100/221]   att_loss  (0.27088461713035505) region_loss (0.29065918856033)  overall_loss (0.28670427793323405)      Prec1  (98.22091674804688)
+Training Epoch: [17][200/221]   att_loss  (0.27378321287050766) region_loss (0.30424243656557)  overall_loss (0.2981505964822437)       Prec1  (98.0993423461914)
+Training Epoch: [17][100/221]   att_loss  (0.27088461713035505) region_loss (0.29065918856033)  overall_loss (0.28670427793323405)      Prec1  (98.22091674804688)                                     [62/1879]
+Training Epoch: [17][200/221]   att_loss  (0.27378321287050766) region_loss (0.30424243656557)  overall_loss (0.2981505964822437)       Prec1  (98.0993423461914)
+Testing [24/25] att_loss  (0.6089071787710892)  region_loss (2.6270449088567527)        overall_loss (2.2234173758530793)       Prec@1  (86.48390197753906)
+Epoch: 17   Test Acc: 86.48390197753906
+Training Epoch: [18][0/221]     att_loss  (0.24179311096668243) region_loss (0.3449452817440033)        overall_loss (0.3243148624897003)       Prec1  (98.4375)
+Training Epoch: [18][100/221]   att_loss  (0.27221470230286665) region_loss (0.30887431496440776)       overall_loss (0.3015423976253755)       Prec1  (97.85736083984375)
+Training Epoch: [18][200/221]   att_loss  (0.2733057158355096)  region_loss (0.3197079324603674)        overall_loss (0.31042749490310895)      Prec1  (97.80394744873047)
+Testing [24/25] att_loss  (0.6466011703014374)  region_loss (2.8435889868208815)        overall_loss (2.404191505844364)        Prec@1  (87.72713470458984)
+Epoch: 18   Test Acc: 87.72713470458984
 
 Training Epoch: [19][0/221]	att_loss  (0.5974710583686829)	region_loss (1.6363540887832642)	overall_loss (1.4285775423049927)	Prec1  (89.84375) 	
 Training Epoch: [19][100/221]	att_loss  (0.4607743712344972)	region_loss (0.9555912755503513)	overall_loss (0.8566279110341969)	Prec1  (94.35334014892578) 	
