@@ -1,4 +1,4 @@
-'''
+
 Aum Sri Sai Ram
 
 Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
@@ -26,6 +26,6 @@ dataset: This folder has dataset class for each of dataset AffectNet, RAFDB, Fer
 model: This folder has backbone resent model and attention based model.
 logs: This has logs of training and testing different models
 Each of train_datasetname.py has training and testing code for respective dataset.
-'''
+
 
 Thank you.
