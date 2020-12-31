@@ -1,0 +1,61 @@
+
+
+		 Aum Sri Sai Ram
+		RAFDB FER using  Attention branch based on gaussian maps with region branch(OADN)
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=64, database='RAFDB', end2end=True, epochs=60, evaluate=False, imagesize=224, landmarksfile='../data/RAFDB/RAFDB_landmarks_scores.pkl', lr=0.001, model_dir='checkpoints_rafdb', momentum=0.9, num_attentive_regions=25, num_classes=7, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=50, resume='checkpoints_rafdb/model_best.pth.tar', root_path='../data/RAFDB/Image/aligned/', start_epoch=0, test_list='../data/RAFDB/EmoLabel/rafdb_occlusion_list.txt', train_list='../data/RAFDB/EmoLabel/train_label.txt', weight_decay=0.0005, workers=16)
+img_dir: ../data/RAFDB/Image/aligned/
+../data/RAFDB/EmoLabel/train_label.txt  has total:  12271
+length of RAFDB train Database: 12271
+length of RAFDB test Database: 735
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526343, Region Branch:526343 and Total: 24560718
+
+Model loaded for layers 1-4 from vggface2 pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl
+=> loading checkpoint 'checkpoints_rafdb/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_rafdb/model_best.pth.tar' (epoch 43)
+../data/RAFDB/EmoLabel/rafdb_occlusion_list.txt
+Testing [11/12]	att_loss  (0.9491434698202172)	region_loss (6.98697263042943)	overall_loss (5.7794068459750845)	Prec@1  (85.1700668334961)	
+Test Acc: 85.1700668334961
+
+		 Aum Sri Sai Ram
+		RAFDB FER using  Attention branch based on gaussian maps with region branch(OADN)
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=64, database='RAFDB', end2end=True, epochs=60, evaluate=False, imagesize=224, landmarksfile='../data/RAFDB/RAFDB_landmarks_scores.pkl', lr=0.001, model_dir='checkpoints_rafdb', momentum=0.9, num_attentive_regions=25, num_classes=7, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=50, resume='checkpoints_rafdb/model_best.pth.tar', root_path='../data/RAFDB/Image/aligned/', start_epoch=0, test_list='../data/RAFDB/EmoLabel/val_raf_db_list_pose_30.txt', train_list='../data/RAFDB/EmoLabel/train_label.txt', weight_decay=0.0005, workers=16)
+img_dir: ../data/RAFDB/Image/aligned/
+../data/RAFDB/EmoLabel/train_label.txt  has total:  12271
+length of RAFDB train Database: 12271
+length of RAFDB test Database: 1247
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526343, Region Branch:526343 and Total: 24560718
+
+Model loaded for layers 1-4 from vggface2 pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl
+=> loading checkpoint 'checkpoints_rafdb/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_rafdb/model_best.pth.tar' (epoch 43)
+../data/RAFDB/EmoLabel/val_raf_db_list_pose_30.txt
+Testing [19/20]	att_loss  (0.7518973200437825)	region_loss (4.996484120941774)	overall_loss (4.147566779671235)	Prec@1  (87.65036010742188)	
+Test Acc: 87.65036010742188
+
+		 Aum Sri Sai Ram
+		RAFDB FER using  Attention branch based on gaussian maps with region branch(OADN)
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=64, database='RAFDB', end2end=True, epochs=60, evaluate=False, imagesize=224, landmarksfile='../data/RAFDB/RAFDB_landmarks_scores.pkl', lr=0.001, model_dir='checkpoints_rafdb', momentum=0.9, num_attentive_regions=25, num_classes=7, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=50, resume='checkpoints_rafdb/model_best.pth.tar', root_path='../data/RAFDB/Image/aligned/', start_epoch=0, test_list='../data/RAFDB/EmoLabel/val_raf_db_list_pose_45.txt', train_list='../data/RAFDB/EmoLabel/train_label.txt', weight_decay=0.0005, workers=16)
+img_dir: ../data/RAFDB/Image/aligned/
+../data/RAFDB/EmoLabel/train_label.txt  has total:  12271
+length of RAFDB train Database: 12271
+length of RAFDB test Database: 558
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526343, Region Branch:526343 and Total: 24560718
+
+Model loaded for layers 1-4 from vggface2 pretrainedmodels/vgg_msceleb_resnet50_ft_weight.pkl
+=> loading checkpoint 'checkpoints_rafdb/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_rafdb/model_best.pth.tar' (epoch 43)
+../data/RAFDB/EmoLabel/val_raf_db_list_pose_45.txt
+Testing [8/9]	att_loss  (0.7536400616382612)	region_loss (5.1676094130375905)	overall_loss (4.284815636159698)	Prec@1  (87.63440704345703)	
+Test Acc: 87.63440704345703

@@ -1,0 +1,119 @@
+ER on AffectNet-8 using OADNFER on AffectNet-8 using OADN
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=128, database='Affectnet', end2end=True, epochs=60, evaluate=False, imagesize=224, lr=0.001, model_dir='checkpoints_affectnet8', momentum=0.9, num_
+attentive_regions=25, num_classes=8, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=100, resume='checkpoints_affectnet8/model_best.pth.tar', root_path='../data/AffectNetd
+ataset/Manually_Annotated_Images_aligned/', start_epoch=0, train_landmarksfile='../data/Affectnetmetadata/training_affectnet_landmarks_scores.pkl', train_list='../data/Affectnetmetadata/training.csv', v
+alid_landmarksfile='../data/Affectnetmetadata/validation_affectnet_landmarks_scores.pkl', valid_list='../data/Affectnetmetadata/validation.csv', weight_decay=1e-05, workers=16)
+
+img_dir:  ../data/AffectNetdataset/Manually_Annotated_Images_aligned/
+
+checkpoints:  checkpoints_affectnet8
+Total included  287651 {0: 74874, 1: 134415, 2: 25459, 3: 14090, 4: 6378, 5: 3803, 6: 24882, 7: 3750}
+Total included  4000 {0: 500, 1: 500, 2: 500, 3: 500, 4: 500, 5: 500, 6: 500, 7: 500}
+length of  train Database for training: 287651
+length of  test Database: 4000
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526600, Region Branch:526600 and Total: 24561232
+=> loading checkpoint 'checkpoints_affectnet8/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_affectnet8/model_best.pth.tar' (epoch 2)
+Testing [31/32] att_loss  (2.0792817497253417)  region_loss (4.759116485595703) overall_loss (4.223149593353272)        Prec@1  (58.92500305175781)
+valid_list='../data/Affectnetmetadata/validation.csv'
+Epoch: 0   Test Acc: 58.92500305175781
+Traceback (most recent call last):
+  File "train_affectnet.py", line 541, in <module>
+    main()
+  File "train_affectnet.py", line 292, in main
+    assert False
+AssertionError
+
+(cpytorch) darshan@ubuntu14:~/OADN_FER$ python train_affectnet.py
+
+                                 Aum Sri Sai Ram
+FER on AffectNet-8 using OADN
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=128, database='Affectnet', end2end=True, epochs=60, evaluate=False, imagesize=224, lr=0.001, model_dir='checkpoints_affectnet8', momentum=0.9, num_
+attentive_regions=25, num_classes=8, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=100, resume='checkpoints_affectnet8/model_best.pth.tar', root_path='../data/AffectNetd
+ataset/Manually_Annotated_Images_aligned/', start_epoch=0, train_landmarksfile='../data/Affectnetmetadata/training_affectnet_landmarks_scores.pkl', train_list='../data/Affectnetmetadata/training.csv', v
+alid_landmarksfile='../data/Affectnetmetadata/validation_affectnet_landmarks_scores.pkl', valid_list='../data/Affectnetmetadata/occlusion_affectnet_list.txt', weight_decay=1e-05, workers=16)
+
+img_dir:  ../data/AffectNetdataset/Manually_Annotated_Images_aligned/
+
+checkpoints:  checkpoints_affectnet8
+Total included  287651 {0: 74874, 1: 134415, 2: 25459, 3: 14090, 4: 6378, 5: 3803, 6: 24882, 7: 3750}
+length of  train Database for training: 287651
+length of  test Database: 683
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526600, Region Branch:526600 and Total: 24561232
+=> loading checkpoint 'checkpoints_affectnet8/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_affectnet8/model_best.pth.tar' (epoch 2)
+Testing [5/6]   att_loss  (2.079850078850854)   region_loss (4.84347766105462)  overall_loss (4.2907522279731)  Prec@1  (60.32210922241211)
+ valid_list='../data/Affectnetmetadata/occlusion_affectnet_list.txt'
+Epoch: 0   Test Acc: 60.32210922241211
+Traceback (most recent call last):
+  File "train_affectnet.py", line 541, in <module>
+    main()
+  File "train_affectnet.py", line 292, in main
+    assert False
+AssertionError
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=128, database='Affectnet', end2end=True, epochs=60, evaluate=False, imagesize=224, lr=0.001, model_dir='checkpoints_affectnet8', momentum=0.9, num_attentive_regions=25, num_classes=8, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=100, resume='checkpoints_affectnet8/model_best.pth.tar', root_path='../data/AffectNetdataset/Manually_Annotated_Images_aligned/', start_epoch=0, train_landmarksfile='../data/Affectnetmetadata/training_affectnet_landmarks_scores.pkl', train_list='../data/Affectnetmetadata/training.csv', valid_landmarksfile='../data/Affectnetmetadata/validation_affectnet_landmarks_scores.pkl', valid_list='../data/Affectnetmetadata/pose_30_affectnet_list.txt', weight_decay=1e-05, workers=16)
+
+img_dir:  ../data/AffectNetdataset/Manually_Annotated_Images_aligned/
+
+checkpoints:  checkpoints_affectnet8
+Total included  287651 {0: 74874, 1: 134415, 2: 25459, 3: 14090, 4: 6378, 5: 3803, 6: 24882, 7: 3750}
+length of  train Database for training: 287651
+length of  test Database: 1801
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526600, Region Branch:526600 and Total: 24561232
+=> loading checkpoint 'checkpoints_affectnet8/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_affectnet8/model_best.pth.tar' (epoch 2)
+Testing [14/15] att_loss  (2.07885008213058)    region_loss (4.859802138335436) overall_loss (4.303611877161817)        Prec@1  (57.13492202758789)
+
+valid_list='../data/Affectnetmetadata/pose_30_affectnet_list.txt'
+Epoch: 0   Test Acc: 57.13492202758789
+
+
+Traceback (most recent call last):
+  File "train_affectnet.py", line 541, in <module>
+    main()
+  File "train_affectnet.py", line 292, in main
+    assert False
+AssertionError
+(cpytorch) darshan@ubuntu14:~/OADN_FER$ python train_affectnet.py
+
+                                 Aum Sri Sai Ram
+FER on AffectNet-8 using OADN
+
+
+Namespace(arch='resnet50', batch_size=64, batch_size_t=128, database='Affectnet', end2end=True, epochs=60, evaluate=False, imagesize=224, lr=0.001, model_dir='checkpoints_affectnet8', momentum=0.9, num_attentive_regions=25, num_classes=8, num_regions=4, pretrained='pretrainedmodels/resnet50-19c8e357.pth', print_freq=100, resume='checkpoints_affectnet8/model_best.pth.tar', root_path='../data/AffectNetdataset/Manually_Annotated_Images_aligned/', start_epoch=0, train_landmarksfile='../data/Affectnetmetadata/training_affectnet_landmarks_scores.pkl', train_list='../data/Affectnetmetadata/training.csv', valid_landmarksfile='../data/Affectnetmetadata/validation_affectnet_landmarks_scores.pkl', valid_list='../data/Affectnetmetadata/pose_45_affectnet_list.txt', weight_decay=1e-05, workers=16)
+
+img_dir:  ../data/AffectNetdataset/Manually_Annotated_Images_aligned/
+
+checkpoints:  checkpoints_affectnet8
+Total included  287651 {0: 74874, 1: 134415, 2: 25459, 3: 14090, 4: 6378, 5: 3803, 6: 24882, 7: 3750}
+length of  train Database for training: 287651
+length of  test Database: 912
+
+Number of parameters:
+Base Model: 23508032, Attention Branch:526600, Region Branch:526600 and Total: 24561232
+=> loading checkpoint 'checkpoints_affectnet8/model_best.pth.tar'
+=> loaded checkpoint 'checkpoints_affectnet8/model_best.pth.tar' (epoch 2)
+Testing [7/8]   att_loss  (2.078713575998942)   region_loss (4.901695017229047) overall_loss (4.337098824350457)        Prec@1  (55.043861389160156)
+
+valid_list='../data/Affectnetmetadata/pose_45_affectnet_list.txt'
+Epoch: 0   Test Acc: 55.043861389160156
+
+
+Traceback (most recent call last):
+  File "train_affectnet.py", line 541, in <module>
+    main()
+  File "train_affectnet.py", line 292, in main
+    assert False
+AssertionError

@@ -1,10 +1,17 @@
+'''
 Aum Sri Sai Ram
 
 Authors: Darshan Gera and Dr. S. Balasubramanian, SSSIHL
 
-This is an implemenation of following paper:
+Date: 16-12-2020
+
+Email: darshangera@sssihl.edu.in
+
+Purpose: FER using OADN 
 
 Ref: Hui Ding, Peng Zhou, and Rama Chellappa. Occlusion-adaptive deep network for robust facial expression recognition. arXiv preprint arXiv:2005.06040, 2020
+
+This is an implementation of OADN on various FER datasets.
 
 Requirements: pytorch >=1.3, torchvision
 
@@ -19,5 +26,6 @@ dataset: This folder has dataset class for each of dataset AffectNet, RAFDB, Fer
 model: This folder has backbone resent model and attention based model.
 logs: This has logs of training and testing different models
 Each of train_datasetname.py has training and testing code for respective dataset.
+'''
 
-Contact darshangera@sssihl.edu.in in case of any queries.
+Thank you.
