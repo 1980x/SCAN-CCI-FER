@@ -1,3 +1,7 @@
+Our work has been accepted for publication in Pattern Recognition letters.
+https://www.sciencedirect.com/science/article/abs/pii/S0167865521000489#absh0002
+
+
 <strong>Title:</strong> Landmark Guidance Independent Spatio-channel Attention and Complementary Context Information based Facial Expression Recognition
 
 https://arxiv.org/pdf/2007.10298v1.pdf
