@@ -1,4 +1,7 @@
 Our work has been accepted for publication in Pattern Recognition letters.
+
+https://authors.elsevier.com/a/1ca-7cAmylz0f
+
 https://www.sciencedirect.com/science/article/abs/pii/S0167865521000489#absh0002
 
 
