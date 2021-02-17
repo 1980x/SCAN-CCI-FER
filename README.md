@@ -1,4 +1,4 @@
-Our work has been accepted for publication in Pattern Recognition letters.
+Our work has been published in Pattern Recognition letters.
 
 https://authors.elsevier.com/a/1ca-7cAmylz0f
 
