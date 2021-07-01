@@ -9,9 +9,13 @@ https://www.sciencedirect.com/science/article/abs/pii/S0167865521000489#absh0002
 https://arxiv.org/pdf/2007.10298v1.pdf
 
 This work was presented in FG-2020 workshop: Affect Recognition in-the-wild: Uni/Multi-Modal Analysis & VA-AU-Expression Challenges
+
 IEEE Face and Gesture Recognition (FG-2020) Competition: Affective Behavior Analysis in-the-wild (ABAW)
+
 Leaderboard: https://ibug.doc.ic.ac.uk/resources/fg-2020-competition-affect
+
 Darshan Gera and S. Balasubramanian."Affect Expression Behaviour Analysis in the Wild (ABAW) using Spatio-channel Attention and Complementary Context Information", Arxiv preprint: http://arxiv.org/abs/2009.14440
+
 Source Code: https://github.com/1980x/ABAW2020DMACS
 
 <strong> Our proposed FER framework:<strong>
